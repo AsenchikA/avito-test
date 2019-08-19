@@ -1,0 +1,15 @@
+.product-card {
+  display: flex;
+  height: 300px;
+
+  &__photo {
+    width: 400px;
+    object-fit: cover;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 30px;
+  }
+}
