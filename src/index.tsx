@@ -8,7 +8,7 @@ import { AppContainer } from './App';
 import './index.scss';
 import { rootReducer } from './reducers';
 
-const store = createStore(
+export const store = createStore(
   rootReducer,
   composeWithDevTools(applyMiddleware(thunk)),
 );
@@ -17,5 +17,5 @@ ReactDOM.render(
   <Provider store={store}>
     <AppContainer />
   </Provider>,
-  document.getElementById('root'),
+  document.getElementById('root') || document.createElement('div'),
 );

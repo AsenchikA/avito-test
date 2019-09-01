@@ -16,7 +16,7 @@ export const Sorting = (props: ISortingProps) => {
 
   return (
     <div className='sorting'>
-      <select name='sorting-select' value={sorting} onChange={onChange}>
+      <select className='sorting__select' name='sorting-select' value={sorting} onChange={onChange}>
         <option value={ESortingTypes.PRICE}>по возрастанию цены</option>
         <option value={ESortingTypes.POPULAR}>по популярности</option>
       </select>
